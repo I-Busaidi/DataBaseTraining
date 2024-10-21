@@ -26,7 +26,7 @@ where Pname like 'a%'
 
 --18. Display all employees in Dept. 30 whose salary is from 1000 to 2000
 select * from Employee
-where Salary between 1000 and 2000
+where Dno = 30 and Salary between 1000 and 2000
 
 --19. Retrieve the names of all employees in dept. 10 who works more than or equal to 10hrs
 --in Al Rabwah project.
