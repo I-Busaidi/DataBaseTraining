@@ -24,7 +24,7 @@ where Salary > 1000
 --6. Display employee id, name where salary > 10000 LE
 select SSN, Fname+' '+Lname as [Name]
 from Employee
-where Salary > 10000
+where Salary*12 > 10000
 
 --7. Display name and salary of female employees
 select Fname+' '+Lname as [Name], Salary
