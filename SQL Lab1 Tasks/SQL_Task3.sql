@@ -31,8 +31,8 @@ where Dno = 30 and Salary between 1000 and 2000
 --19. Retrieve the names of all employees in dept. 10 who works more than or equal to 10hrs
 --in Al Rabwah project.
 select distinct e.Fname+' '+e.Lname as [Name]
-from Works_for w inner join Employee e on w.ESSn = e.SSN inner join Departments d on e.Dno = 10
-where w.Hours >= 10
+from Works_for w inner join Employee e on w.ESSn = e.SSN inner join Project p on w.Pno = p.Pnumber
+where w.Hours >= 10 and e.Dno = 10 and p.Pname = 'AL Rabwah'
 
 --20. employees directly supervised by Kamel Mohammed
 select e1.Fname + ' ' + e1.Lname as [Name]
